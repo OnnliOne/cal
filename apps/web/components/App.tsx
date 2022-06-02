@@ -64,9 +64,9 @@ export default function App({
   const [installedApp, setInstalledApp] = useState(false);
 
   useEffect(() => {
-    async function getInstalledApp(appCredentialType: string) {
+    async function getInstalledApp(slug: string) {
       const queryParam = new URLSearchParams();
-      queryParam.set("app-credential-type", appCredentialType);
+      queryParam.set("app-slug", slug);
       try {
         const result = await fetch(`/api/app-store/installed?${queryParam.toString()}`, {
           method: "GET",
@@ -83,8 +83,8 @@ export default function App({
         }
       }
     }
-    getInstalledApp(type);
-  }, [type]);
+    getInstalledApp(slug);
+  }, [slug]);
 
   return (
     <>

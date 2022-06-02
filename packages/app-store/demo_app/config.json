@@ -7,6 +7,7 @@
   "logo": "/api/app-store/demo_app/icon.svg",
   "url": "https://cal.com/apps/demo_app",
   "variant": "other",
-  "publisher": "hariom",
-  "email": "har@gmail"
+  "publisher": "Hariom",
+  "email": "hariombalhara@gmail.com",
+  "description": "It is the description of a demo app"
 }

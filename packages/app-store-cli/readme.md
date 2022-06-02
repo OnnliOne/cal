@@ -18,21 +18,14 @@ If we rename all existing apps to their slug names, we can remove type and then 
 ## TODO
 
 - Beta Release
-  - Print slug after creation of app. Also, mention that it would be same as dir name
-  - Handle legacy apps which have dirname as something else and type as something else. type is used to do lookups with key
   - Add comment in config.json that this file shouldn't be modified manually.
-  - Install button not coming
-  - Put lowercase and - restriction only on slug. Keep App Name and others unchanged. Also, use slug instead of appName for dirNames
-    - Add space restriction as well for Appname. Maybe look for valid dirname or slug regex
-  - Get strong confirmation for deletion of app. Get the name of the app from user that he wants to delete
-  - App Description Missing
-  - Select Box for App Type
-    - App types Validations
-  - Credentials table doesn't get new entries with cli. Figure out how to do it.
+    - We should be able to remove type property from it.
+    - Show a warning somewhere that directory must not be renamed manually, edit command must be used.
   - Using app/config.json -> Allow Editing App Details.
     - Edit App Type, Description, Title, Publisher Name, Email - Name shouldn't be allowed to change as that is unique.
   
 - Improvements
+  - Prefill fields in edit command
   - Merge app-store:watch and app-store commands, introduce app-store --watch
   - Allow inputs in non interactive way as well - That would allow easily copy pasting commands.
   - Maybe get dx to run app-store:watch
